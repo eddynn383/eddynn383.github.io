@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/fontawesome/css/all.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />    
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script defer type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script defer type="text/javascript" src="script.js"></script>
+    <title>IMC Learning Solution</title>
+</head>
+<body>
+    <div class="layout">
+        <div class="layout_inner">
+            <header>
+                <div class="inner">
+                    <div class="header_navigation">
+                        <div class="header_logo">
+                            <img src="assets/imc-logo-white.svg" alt="IMC Learning Solution">
+                        </div>            
+                        <div class="header_toggle">
+                            <button type="button" class="fas fa-bars" id="navToggle"></button>
+                        </div>
+                        <nav>
+                            <ul class="nav_level1">
+                                <li class="active"><a href="/">Home</a></li>
+                                <li class="has-children">
+                                    <a href="/">Catalogues</a>
+                                    <ul class="nav_level2">
+                                        <li><a href="/none">Sub Item 1</a></li>
+                                        <li><a href="/none">Sub Item 2</a></li>
+                                        <li><a href="/none">Sub Item 3</a></li>
+                                        <li><a href="/none">Sub Item 4</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/">eLibrary</a></li>
+                                <li class="has-children">
+                                    <a href="/">Learn</a>
+                                    <ul class="nav_level2">
+                                        <li><a href="/none">Sub Item 1</a></li>
+                                        <li><a href="/none">Sub Item 2</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-children">
+                                    <a href="/">Boboc Eduard</a>
+                                    <ul class="nav_level2">
+                                        <li><a href="/none">Your Profile</a></li>
+                                        <li><a href="/none">Upgrade</a></li>
+                                        <li><a href="/none">Help</a></li>
+                                        <li><a href="/none">Settings</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="nav_social">
+                                <li><a href="/none"><i class="fas fa-link"></i></a></li>
+                                <li><a href="/none"><i class="fas fa-at"></i></a></li>
+                                <li><a href="/none"><i class="fab fa-facebook-f"></i></i></a></li>
+                                <li><a href="/none"><i class="fab fa-twitter"></i></a></li>
+                            </ul>
+                        </nav>           
+                    </div>
+                    <div class="header_banner">
+                        <img src="assets/banner.jpg" alt="Banner Image">
+                    </div>
+                </div>
+            </header>
+            <main>
+                <div class="inner">
+                    <section class="panel panel--language">
+                        <select name="languageSwitch" id="languageSwitch">
+                            <option value="english">English</option>
+                            <option value="deutsch">Deutsch</option>
+                            <option value="french">French</option>
+                        </select>
+                    </section>
+                    <section class="panel panel--action">
+                        <div class="panel_inner">
+                            <div class="panel_left">
+                                <h1 class="panel_title">Lorem ipsum sin dolor</h1>
+                                <div class="panel_date">
+                                    <div class="panel_start">
+                                        <span class="panel_label">Course starts:</span>
+                                        <span class="panel_value">18 Feb 2021 08:59</span>
+                                    </div>
+                                    <div class="panel_end">
+                                        <span class="panel_label">Course ends:</span>
+                                        <span class="panel_value">31 Nov 2021 18:00</span>
+                                    </div>
+                                </div>
+                                <div class="panel_location"><i class="fas fa-location-arrow"></i><span>London, UK</span></div>
+                                <div class="panel_action">
+                                    <a href="/none" class="btn btn-primary">Open course</a>
+                                </div>
+                                <div class="panel_message">
+                                    <p>You are already enrolled!</p>
+                                </div>
+                            </div>
+                            <div class="panel_right">
+                                <div class="panel_progress">
+                                    <div class="panel_top">
+                                        <div class="panel_successful">
+                                            <span class="panel_label">Successful rate</span>
+                                            <div class="panel_pie-container" data-progress="50">
+                                                <span class="panel_pie-label">
+                                                    <span class="value">50</span>
+                                                    <span class="type">%</span>
+                                                </span>
+                                                <span class="panel_pie-left">
+                                                    <span class="panel_pie-bar"></span>
+                                                </span>
+                                                <span class="panel_pie-right">
+                                                    <span class="panel_pie-bar"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="panel_rating">
+                                            <span class="panel_label">Students rating</span>
+                                            <div class="panel_pie-container" data-progress="100">
+                                                <span class="panel_pie-label multirow">
+                                                    <span class="value">5</span>
+                                                    <span class="type smaller">Stars</span>
+                                                </span>
+                                                <span class="panel_pie-left">
+                                                    <span class="panel_pie-bar"></span>
+                                                </span>
+                                                <span class="panel_pie-right">
+                                                    <span class="panel_pie-bar"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="panel_time-spend">
+                                            <span class="panel_label">Time spend</span>
+                                            <div class="panel_pie-container" data-progress="25">
+                                                <span class="panel_pie-label">
+                                                    <span class="value">22</span>
+                                                    <span class="type">H</span>
+                                                </span>
+                                                <span class="panel_pie-left">
+                                                    <span class="panel_pie-bar"></span>
+                                                </span>
+                                                <span class="panel_pie-right">
+                                                    <span class="panel_pie-bar"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel_bottom">
+                                        <div class="pane_tm">
+                                            <div class="pane_tm-bar" data-progress="50">
+                                                <span class="pane_bar-label">Time management:</span>
+                                                <div class="pane_bar-value">
+                                                    <div class="pane_bar-progress"></div>
+                                                    <div class="pane_bar-shadow"></div>
+                                                </div>
+                                            </div>
+                                            <div class="pane_tm-xp">
+                                                <span>+15<span class="smaller">XP</span></span>
+                                            </div>
+                                        </div>
+                                        <div class="pane_ec">
+                                            <div class="pane_ec-bar" data-progress="25">
+                                                <span class="pane_bar-label">Time management:</span>
+                                                <div class="pane_bar-value">
+                                                    <div class="pane_bar-progress"></div>
+                                                    <div class="pane_bar-shadow"></div>
+                                                </div>
+                                            </div>
+                                            <div class="pane_ec-xp">
+                                                <span>+15<span class="smaller">XP</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="panel panel--description">
+                        <div class="panel_inner">
+                            <div class="pane_about">
+                                <h2 class="pane_about-title">About Course</h2>
+                                <div class="pane_about-description">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in vestibulum consequat, velit malesuada augue nunc. Hendrerit blandit imperdiet sed facilisis elit. Nunc, mattis id scelerisque tincidunt consequat. Faucibus praesent amet pretium morbi purus.</p>
+                                    <p>At bibendum consectetur mi, viverra pretium. Aenean sit metus lacinia orci et. Velit, ut eleifend purus sed facilisis dictum quis fringilla aenean. Platea vulputate praesent orci fermentum. Nulla ultricies volutpat, proin dis. Massa vitae elit, posuere integer posuere pharetra commodo.</p>
+                                    <div class="pane_about-links">
+                                        <a href="/none" class="link"><i class="fas fa-comments"></i><span>Discussion</span></a>
+                                        <a href="/none" class="link"><i class="fas fa-award"></i><span>Certification</span></a>
+                                    </div>
+                                    <div class="pane_about-cancellation-fee">
+                                        <h3>Applicable cancellation fees</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit:</p>
+                                        <ul>
+                                            <li>Nunc, mattis id scelerisque tincidunt consequat</li>
+                                            <li>Nunc, mattis id scelerisque tincidunt consequat</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pane_feedback">
+                                <h2 class="pane_feedback-title">Course Feedback</h2>
+                                <div class="pane_feedback-items">
+                                    <div class="pane_feedback-item">
+                                        <div class="pane_feedback-item-inner">
+                                            <div class="pane_feedback-quote">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in vestibulum consequat, velit malesuada augue nunc. Hendrerit blandit imperdiet sed facilisis elit. Nunc, mattis id scelerisque tincidunt consequat.</p>
+                                            </div>
+                                            <span class="pane_feedback-person">Andrew Mcdalff</span>
+                                        </div>
+                                    </div>
+                                    <div class="pane_feedback-item">
+                                        <div class="pane_feedback-item-inner">
+                                            <div class="pane_feedback-quote">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in vestibulum consequat, velit malesuada augue nunc. Hendrerit blandit imperdiet sed facilisis elit. Nunc, mattis id scelerisque tincidunt consequat.</p>
+                                            </div>
+                                            <span class="pane_feedback-person">Andrew Mcdalff</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pane_tutor">
+                                <h2 class="pane_tutor-title">Tutor Biography</h2>
+                                <div class="pane_tutor-description">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in vestibulum consequat, velit malesuada augue nunc. Hendrerit blandit imperdiet sed facilisis elit. Nunc, mattis id scelerisque tincidunt consequat. Faucibus praesent amet pretium morbi purus.</p>
+                                    <p>At bibendum consectetur mi, viverra pretium. Aenean sit metus lacinia orci et. Velit, ut eleifend purus sed facilisis dictum quis fringilla aenean. Platea vulputate praesent orci fermentum. Nulla ultricies volutpat, proin dis. Massa vitae elit, posuere integer posuere pharetra commodo.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="panel panel--location">
+                        <div class="panel_inner">
+                            <div class="pane_our-location">
+                                <h2 class="pane_our-location-title">Our Location</h2>
+                                <div class="pane_our-location-description">
+                                    <p>Aenean sit metus lacinia orci et. Velit, ut eleifend purus sed facilisis dictum quis fringilla aenean. Platea vulputate praesent orci fermentum. Nulla ultricies volutpat, proin dis.</p>
+                                </div>
+                                <div class="pane_our-location-map">
+                                    <iframe src="https://www.google.com/maps/embed/v1/place?q=craiova,+bulevadul+dacia+30b&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8" ></iframe>
+                                </div>
+                            </div>
+                            <div class="pane_other-locations">
+                                <h2 class="pane_other-locations-title">Other Locations</h2>
+                                <div class="pane_other-locations-links">
+                                    <a class="pane_other-locations-link" href="/none">Aenean sit metus lacinia orci et.</a>
+                                    <a class="pane_other-locations-link" href="/none">Aenean sit metus lacinia orci et.</a>
+                                    <a class="pane_other-locations-link" href="/none">Aenean sit metus lacinia orci et.</a>
+                                    <a class="pane_other-locations-link" href="/none">Aenean sit metus lacinia orci et.</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+            <footer>
+                <div class="inner">
+                    <div class="footer_navigation">
+                        <div class="footer_logo">
+                            <img src="assets/imc-logo.svg" alt="IMC Learning Solution">
+                        </div>            
+                        <nav>
+                            <ul class="nav_level1">
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/">Catalogues</a></li>
+                                <li><a href="/">eLibrary</a></li>
+                                <li><a href="/">Learn</a></li>
+                            </ul>
+                        </nav>           
+                    </div>
+                    <div class="footer_credits">Designed by Boboc Eduard</div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
